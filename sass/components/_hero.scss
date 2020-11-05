@@ -1,0 +1,40 @@
+.hero__container {
+  padding-top: 156px;
+  padding-left: 120px;
+  padding-bottom: 245px;
+}
+.hero__label {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
+  &::before {
+    @extend%label-line;
+    background-color: rgba(157, 164, 189, 0.6);
+  }
+}
+.hero__title {
+  @extend%title-style;
+  margin-top: 20px;
+
+  font-size: 48px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+}
+.hero__description {
+  margin-top: 20px;
+  margin-bottom: 0;
+
+  max-width: 355px;
+
+  font-size: 16px;
+  line-height: 1.62;
+  color: $secondary-text-color;
+}

@@ -14,8 +14,8 @@
                 <use href="./images/sprite.svg#icon-Logo"></use>
             </svg></a>
             <div class="side-bar__social">
-                <a href="" class="side-bar__item">Youtube</a>
-                <a href="" class="side-bar__item">Instagram</a>
+                <a href="" class="side-bar__links">Youtube</a>
+                <a href="" class="side-bar__links">Instagram</a>
             </div>                                                    
         </aside>        
         <div class="slider">
@@ -42,7 +42,7 @@
                         <div class="hero__content">
                             <p class="hero__label">A hair salon for men in Kyiv</p>
                         <h1 class="hero__title">BarberShop</h1>
-                        <p class="hero__descriotuon">Мы эксперты в модных мужских стрижках. 
+                        <p class="hero__description">Мы эксперты в модных мужских стрижках. 
                             Работаем быстро, осторожно и со вкусом.</p>
                             
                         </div>            
@@ -51,40 +51,67 @@
         </div>
     </div>
         <section class="about">
-            <div class="container">
-                <ul class="about__images">
-                    <li><img src="" alt="бритье бороды" width="330" height="235"></li>
-                    <li><img src="" alt="стрижка волос" width="330" height="235"></li>
+            <div class="about__container">
+                <ul class="about__list-images">
+                    <li class="about__list-images-title"><picture>
+                        <source
+                        srcset="./images/about/img1.webp 1x,
+                                ./images/about/img1@2x.webp 2x"
+                                type="image/webp">
+                        
+                        <img class="about__images"   srcset="./images/about/img1.jpg 1x,
+                                        ./images/about/img1@2x.jpg 2x"
+                                src="./images/about/img1.jpg" alt="бритье бороды" width="330" height="235">
+                    </picture>
+                        </li>
+                    <li class="about__list-images-title">
+                        <picture>
+                        <source 
+                        srcset="./images/about/img2.webp 1x,
+                                ./images/about/img2@2x.webp 2x"
+                                 type="image/webp">
+                        <img class="about__images"   srcset="./images/about/img2.jpg 1x,
+                                        ./images/about/img2@2x.jpg 2x"
+                                src="./images/about/img2.jpg" alt="стрижка волос" width="330" height="235">
+                        </picture>
+                    </li>
                 </ul>
-            </div>
-            <div class="about__content"></div>
-            <p>о нас</p>
-            <h2>Лучший Барбершоп
-                твоего города</h2>
-            <p>Если ты хочешь добавить в свой образ больше уверенности – тебе точно 
-                к нам.</p>
-                <p>Мы команда, которая никогда 
-                    не останавливается на достигнутом и жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже никогда не сможешь быть прежним. Мы команда, которая всегда 
-                    с клиентами "на одной волне". Поэтому, 
+            
+            <div class="about__content">
+                <p class="about__content-label">о нас</p>
+                <h2 class="about__content-title">Лучший Барбершоп
+                    твоего города</h2>
+                <p class="about__content-description">Если ты хочешь добавить в свой образ больше уверенности – тебе точно
+                    к нам.</p>
+                <p class="about__content-description --text">Мы команда, которая никогда
+                    не останавливается на достигнутом и жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже никогда не
+                    сможешь быть прежним. Мы команда, которая всегда
+                    с клиентами "на одной волне". Поэтому,
                     мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
-            <button>онлайн-запись</button>
+                <button class="about__content-button">онлайн-запись</button>
+            </div>
+            
+            </div>
         </section>
         <section class="price">
-            <div class="container">
-                <p>Проведи время в компании лучших мастеров</p>
-                <h2>Услуги и цены</h2>
-                <ul>
-                    <li>Мужская стрижка от 300 грн.</li>
-                    <li>Стрижка бороды от 200 грн.</li>
-                    <li>Стрижка усов от 200 грн.</li>
-                    <li>Бритье опасной бритвой от 200 грн.</li>
-                </ul>
-                <ul>
-                    <li>Cтрижка у стажера от 50 грн.</li>
-                    <li>Стрижка под насадку от 200 грн.</li>
-                    <li>Детская стрижка (до 12 лет) от 300 грн.</li>
-                    <li>Камуфлирование седины от 200 грн.</li>
-                </ul>
+            <div class="price__container">
+                <p class="price__container-label">Проведи время в компании лучших мастеров</p>
+                <h2 class="price__container-title">Услуги и цены</h2>
+                <div class="price__container-list-tablet">
+                    <ul class="price__container-list">
+                        <li class="price__container-items"> <span>Мужская стрижка от</span> <span class="price__container-items__sell"></span> <span>300 грн.</span> </li>
+                        <li class="price__container-items">Стрижка бороды от 200 грн.</li>
+                        <li class="price__container-items">Стрижка усов от 200 грн.</li>
+                        <li class="price__container-items">Бритье опасной бритвой от 200 грн.</li>
+                    </ul>
+                    <ul class="price__container-list --tablet">
+                        <li class="price__container-items">Cтрижка у стажера от 50 грн.</li>
+                        <li class="price__container-items">Стрижка под насадку от 200 грн.</li>
+                        <li class="price__container-items">Детская стрижка (до 12 лет) от 300 грн.</li>
+                        <li class="price__container-items">Камуфлирование седины от 200 грн.</li>
+                    </ul>
+                </div>
+                
                 <button type="button">онлайн-запись</button>
             </div>
         </section>
