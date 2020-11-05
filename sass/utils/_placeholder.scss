@@ -1,0 +1,33 @@
+%title-style {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+%list-reset {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+%hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+%container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 39px;
+  padding-left: 39px;
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+}
+%image-fix {
+  display: block;
+}
