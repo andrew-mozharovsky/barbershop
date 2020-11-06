@@ -22,7 +22,7 @@
   overflow: hidden;
 }
 %container {
-  outline: 1px solid red;
+  // outline: 1px solid red;
   margin-right: auto;
   margin-left: auto;
   padding-right: 39px;
@@ -48,6 +48,10 @@
   background-color: transparent;
   border: 1px solid #ff6c00;
   border-radius: 25px;
+  &:hover,
+  &:focus {
+    background: #ff6c00;
+  }
 }
 %label-line {
   content: '';

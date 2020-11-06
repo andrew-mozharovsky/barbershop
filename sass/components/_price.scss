@@ -1,8 +1,17 @@
 .price__container {
   @extend%container;
-  margin-top: 103px;
   padding-top: 100px;
+  padding-bottom: 100px;
   background-color: #111319;
+
+  background-image: url(../images/price/bg-img.png);
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/price/bg-img@2x.png);
+  }
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .price__container-label {
   margin-left: 16px;
@@ -35,6 +44,7 @@
   @extend%list-reset;
 }
 .price__container-list-tablet {
+  margin-top: 44px;
   padding-top: 30px;
   padding-right: 40px;
   padding-left: 40px;
@@ -52,7 +62,7 @@
 .price__container-items {
   display: flex;
   justify-content: space-between;
-  //   align-items: flex-end;
+  align-items: flex-end;
   font-size: 18px;
   line-height: 1.666;
 
@@ -79,3 +89,19 @@
   //     background-color: red;
   //   }
 }
+.price__container-button {
+  @extend%button;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+
+// background-image: url(../images/header/bg-img.jpg);
+// @media screen and (min-device-pixel-ratio: 2),
+//   screen and (min-resolution: 192dpi),
+//   screen and (min-resolution: 2dppx) {
+//   background-image: url(../images/header/bg-img@2x.jpg);
+// }
+// background-repeat: no-repeat;
+// background-size: cover;
