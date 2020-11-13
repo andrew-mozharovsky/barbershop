@@ -164,6 +164,7 @@
   color: #ffffff;
   &::before {
     @extend%label-line;
+    background-color: rgba(157, 164, 189, 0.4);
   }
 }
 .contakts__container-work-time {

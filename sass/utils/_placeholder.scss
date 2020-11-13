@@ -30,6 +30,11 @@
   @media screen and (min-width: 768px) {
     width: 768px;
   }
+  @media screen and(min-width: 1200px) {
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
 %image-fix {
   display: block;

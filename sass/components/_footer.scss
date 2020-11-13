@@ -24,8 +24,16 @@
   text-decoration: none;
 
   color: $primory-text-color;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
   &:not(:last-child) {
     margin-right: 40px;
+  }
+  &:hover,
+  &:focus {
+    color: $accent-color;
   }
 }
 .footer__content-link-container {
