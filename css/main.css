@@ -79,13 +79,21 @@ body {
 .header__container, .hero__container, .about__container, .price__container, .advantages__container, .team__container, .portfolio__container, .contakts__form-container, .contakts__container, .footer__content {
   margin-right: auto;
   margin-left: auto;
-  padding-right: 39px;
-  padding-left: 39px;
+  padding-right: 31px;
+  padding-left: 31px;
+}
+
+@media screen and (min-width: 480px) {
+  .header__container, .hero__container, .about__container, .price__container, .advantages__container, .team__container, .portfolio__container, .contakts__form-container, .contakts__container, .footer__content {
+    width: 480px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .header__container, .hero__container, .about__container, .price__container, .advantages__container, .team__container, .portfolio__container, .contakts__form-container, .contakts__container, .footer__content {
     width: 768px;
+    padding-right: 39px;
+    padding-left: 39px;
   }
 }
 
@@ -141,11 +149,40 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 32px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .header__container {
+    padding-top: 32px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .heder__mobail-menu {
+    display: none;
+  }
+}
+
+.header__button-open {
+  margin-left: auto;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  fill: #ffffff;
 }
 
 .logo {
-  padding-left: 10px;
+  fill: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    padding-left: 10px;
+  }
 }
 
 .header__navigation {
@@ -201,22 +238,40 @@ body {
 }
 
 .hero__container {
-  padding-top: 275px;
-  padding-bottom: 245px;
+  padding-top: 208px;
+  padding-bottom: 183px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background: rgba(25, 28, 38, 0.2);
-  background-image: url(../images/header/bg-img.jpg);
+  background-image: url(../images/header/bg-img-480.jpg);
   background-repeat: no-repeat;
-  background-position: left 159px top;
-  background-size: contain;
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__container {
+    padding-top: 275px;
+    padding-bottom: 245px;
+  }
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero__container {
-    background-image: url(../images/header/bg-img@2x.jpg);
+    background-image: url(../images/header/bg-img-480@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__container {
+    background-image: url(../images/header/bg-img-768.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero__container {
+    background-image: url(../images/header/bg-img-768@2x.jpg);
   }
 }
 
@@ -233,28 +288,42 @@ body {
   }
 }
 
-.hero__content {
-  padding-left: 240px;
+@media screen and (min-width: 768px) {
+  .hero__container {
+    background-position: left 159px top;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__content {
+    padding-left: 240px;
+  }
 }
 
 .side-bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-left: 32px;
-  padding-right: 30px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 159px;
-  background-color: #fff;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .side-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 32px;
+    padding-right: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 159px;
+    background-color: #fff;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -334,12 +403,18 @@ body {
 .hero__description {
   margin-top: 20px;
   margin-bottom: 0;
-  max-width: 400px;
+  max-width: 306px;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.857;
+  line-height: 1.625;
   letter-spacing: 0.02em;
   color: #9da4bd;
+}
+
+@media screen and (mai-width: 768px) {
+  .hero__description {
+    max-width: 400px;
+  }
 }
 
 .about__container {

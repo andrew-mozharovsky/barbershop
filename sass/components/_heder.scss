@@ -10,11 +10,29 @@
   @extend%container;
   // outline: 1px solid red;
   display: flex;
-  //   align-items: center;
-  padding-top: 32px;
+  align-items: center;
+  padding-top: 40px;
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+  }
+}
+.heder__mobail-menu {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.header__button-open {
+  margin-left: auto;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  fill: #ffffff;
 }
 .logo {
-  padding-left: 10px;
+  fill: #ffffff;
+  @media screen and (min-width: 768px) {
+    padding-left: 10px;
+  }
 }
 .header__navigation {
   margin-left: 64px;
