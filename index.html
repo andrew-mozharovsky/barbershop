@@ -15,7 +15,12 @@
                         <use href="./images/sprite.svg#icon-Logo"></use>
                     </svg></a>
                     <!-- <div class="header__navigation"> -->
-                       <div class="heder__mobail-menu">
+                       <div class="heder__mobail-menu is-hidden" data-menu>
+                        <button class="header__button-close" type="button" data-modal-close>
+                            <svg  width="19" height="19">
+                                <use href="./images/sprite.svg#icon-mobile-close"></use>
+                            </svg>
+                           </button>
                         <nav class="header__navigation">                
                             <ul class="header__nav-list">
                                 <li class="header__nav-items"><a class="header__nav-links" href="">О нас</a></li>
@@ -27,10 +32,18 @@
                         <div class="header__contakt">
                             <button class="header__button" type="button">онлайн-запись</button>
                             <a class="header__phone" href="tel:+380441111111">+38 044 111 11 11</a>
-                        </div> 
+                        </div>
+                        <div class="heder__mobail-menu-social">
+                            <ul class="heder__mobail-menu-social-list">
+                                <li class="heder__mobail-menu-social-item heder__mobail-menu-social-item--label"><a href="" class="heder__mobail-menu-links">Instagram</a></li>
+                                <li class="heder__mobail-menu-social-item"><a href="" class="heder__mobail-menu-links">Youtube</a></li>
+                            </ul>
+                            
+                            
+                        </div>  
                         
                        </div>
-                       <button class="header__button-open" type="button">
+                       <button class="header__button-open" type="button" data-modal-open>
                         <svg  width="24" height="16">
                             <use href="./images/sprite.svg#icon-mobile-open"></use>
                         </svg>
@@ -56,7 +69,7 @@
                             <div class="side-bar__social">
                                 <a href="" class="side-bar__links">Youtube</a>
                                 <a href="" class="side-bar__links">Instagram</a>
-                                                            </div>                                                    
+                            </div>                                                    
                         </aside>                
                     </div>    
                 </section>
@@ -410,6 +423,8 @@
                 <a class="footer__content-link" href="">Youtube</a>
             </div>
         </div>
-    </footer>    
+    </footer>
+    <div class="backdrop is-hidden" data-modal></div>
+    <script src="./js/mobail-menu.js"></script>   
 </body>
 </html>

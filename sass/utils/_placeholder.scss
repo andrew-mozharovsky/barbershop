@@ -61,10 +61,12 @@
   &:hover,
   &:focus {
     background: #ff6c00;
+    color: #ffffff;
   }
 }
 %label-line {
   content: '';
+  display: block;
   margin-right: 20px;
   width: 60px;
   height: 1px;
