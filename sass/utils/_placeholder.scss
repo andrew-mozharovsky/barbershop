@@ -63,6 +63,9 @@
     background: #ff6c00;
     color: #ffffff;
   }
+  transition-property: color, background;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
 }
 %label-line {
   content: '';

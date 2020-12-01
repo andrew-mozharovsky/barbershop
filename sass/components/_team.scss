@@ -1,10 +1,12 @@
 .team__container {
-  padding-right: 159px;
-  padding-left: 159px;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 84px;
+  padding-bottom: 84px;
   background-color: #f7f7f7;
   @extend%container;
+  @media screen and (min-width: 768px) {
+    padding-right: 159px;
+    padding-left: 159px;
+  }
 }
 .team__label {
   display: flex;
@@ -38,6 +40,7 @@
 }
 .team__imege {
   @extend%image-fix;
+  width: 100%;
 }
 .team__list-title {
   margin-top: 30px;

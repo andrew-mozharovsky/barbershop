@@ -1,9 +1,7 @@
 .about__container {
   @extend%container;
-  // position: relative;
-  // margin-top: 664px;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 84px;
+  padding-bottom: 84px;
 
   display: flex;
 }
@@ -48,6 +46,8 @@
   @extend%title-style;
   font-size: 28px;
   line-height: 1.17;
+
+  max-width: 330px;
 }
 .about__content-description {
   margin-top: 20px;

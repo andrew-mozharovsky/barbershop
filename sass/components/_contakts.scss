@@ -1,11 +1,12 @@
 .contakts__form-container {
   @extend%container;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 84px;
+  padding-bottom: 84px;
   background-color: #191c26;
 }
 .contakts__form-container-title {
   @extend%title-style;
+  text-align: center;
 
   font-size: 42px;
   line-height: 1.666;
@@ -17,16 +18,26 @@
   //   display: flex;
 }
 .contakts__form-input-container {
-  display: flex;
+  @media screen and(min-width:768px) {
+    display: flex;
+  }
 
   //   justify-content: space-between;
 }
 .contakts__form-label {
   display: block;
-  //   width: 50%;
-  width: calc((100% - 30px) / 2);
-  &:not(:last-child) {
-    margin-right: 30px;
+
+  @media screen and(max-width:767px) {
+    &:not(:first-child) {
+      margin-top: 44px;
+    }
+  }
+  @media screen and(min-width:768px) {
+    width: calc((100% - 30px) / 2);
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+    //   width: 50%;
   }
 }
 .contakts__form-input {
@@ -43,6 +54,7 @@
   background-color: transparent;
   border: 0;
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  outline: 0;
   &:hover,
   &:focus {
     border-color: #ffffff;
@@ -64,6 +76,8 @@
   background-color: transparent;
   border: 0;
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  color: #ffffff;
+  outline: 0;
   &::placeholder {
     color: rgba(157, 164, 189, 0.4);
   }
@@ -79,26 +93,38 @@
 .contakts__form-button {
   @extend%button;
   margin-top: 44px;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 38px;
   padding-right: 38px;
   display: block;
 }
 .contakts__container {
   @extend%container;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 84px;
+  padding-bottom: 84px;
   background-color: #191c26;
-  background-image: url(../images/contact/img-bg.png);
+  background-image: url(../images/contact/img-bg-480.png);
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url(../images/contact/img-bg@2x.png);
+    background-image: url(../images/contact/img-bg-480@2x.png);
   }
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/contact/img-bg.png);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/contact/img-bg@2x.png);
+    }
+  }
+
   background-repeat: no-repeat;
   background-size: cover;
 }
 .contakts__container-title {
   @extend%title-style;
+  text-align: center;
 
   font-size: 42px;
   line-height: 1.166;
@@ -106,12 +132,16 @@
 }
 .contakts__container-address {
   margin-top: 40px;
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 .contakts__container-address-item {
-  width: calc((100% - 30px) / 2);
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 .contakts__container-address-link {
@@ -149,9 +179,14 @@
   text-decoration: underline;
 }
 .contakts__container-address-link.--map {
-  max-width: 230px;
+  @media screen and (min-width: 768px) {
+    max-width: 230px;
+  }
 }
 .contakts__container-work {
+  @media screen and(max-width:767px) {
+    margin-top: 44px;
+  }
   display: flex;
   align-items: center;
   margin-top: 0;

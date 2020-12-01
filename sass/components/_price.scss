@@ -1,7 +1,7 @@
 .price__container {
   @extend%container;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 84px;
+  padding-bottom: 84px;
   background-color: #111319;
 
   background-image: url(../images/price/bg-img.png);
@@ -14,11 +14,10 @@
   background-size: cover;
 }
 .price__container-label {
-  margin-left: 16px;
   margin-top: 0;
   margin-bottom: 0;
-
   display: flex;
+
   align-items: center;
   font-weight: 600;
   font-size: 11px;
@@ -30,41 +29,44 @@
     @extend%label-line;
     background-color: rgba(157, 164, 189, 0.6);
   }
+  @media screen and(min-width:768px) {
+    margin-left: 16px;
+  }
 }
 .price__container-title {
   @extend%title-style;
   margin-top: 20px;
-  margin-left: 16px;
 
   font-size: 42px;
   line-height: 1.16;
   color: #ffffff;
+
+  @media screen and(min-width:768px) {
+    margin-left: 16px;
+  }
 }
 .price__container-list {
   @extend%list-reset;
 }
-.price__container-list-tablet {
+.price__container-list-content {
   margin-top: 44px;
   padding-top: 30px;
-  padding-right: 40px;
-  padding-left: 40px;
+  padding-right: 30px;
+  padding-left: 30px;
   padding-bottom: 30px;
 
   background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
 .price__container-list.--tablet {
   padding-top: 0;
-  //   @media screen and (max-width: 1199px) {
-  //     margin-top: 20px;
-  //   }
   margin-top: 20px;
 }
 .price__container-items {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  font-size: 18px;
-  line-height: 1.666;
+  font-size: 14px;
+  line-height: 2.14;
 
   color: $secondary-text-color;
   &:not(:first-child) {
@@ -72,22 +74,9 @@
   }
 }
 .price__container-items__sell {
-  //   padding-bottom: 3px;
-  //   background-color: red;
-
   height: 1px;
   flex-grow: 1;
   border-bottom: 1px solid rgba(157, 164, 189, 0.12);
-  //   display: flex;
-  //   flex-grow: 1;
-  //   &::before {
-  //     content: '';
-
-  //     // display: block;
-  //     height: 1px;
-  //     width: 100%;
-  //     background-color: red;
-  //   }
 }
 .price__container-button {
   @extend%button;
@@ -96,12 +85,3 @@
   margin-left: auto;
   display: block;
 }
-
-// background-image: url(../images/header/bg-img.jpg);
-// @media screen and (min-device-pixel-ratio: 2),
-//   screen and (min-resolution: 192dpi),
-//   screen and (min-resolution: 2dppx) {
-//   background-image: url(../images/header/bg-img@2x.jpg);
-// }
-// background-repeat: no-repeat;
-// background-size: cover;
